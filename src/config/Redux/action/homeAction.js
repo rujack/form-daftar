@@ -2,7 +2,7 @@ import axios from "axios";
 
 export const setDataForm = () => (dispatch) => {
   axios
-    .get(`http://192.168.43.238:4000/form/posts`)
+    .get(`https://apidaftar.herokuapp.com/form/posts`)
     .then((result) => {
       const responseApi = result.data;
       dispatch({

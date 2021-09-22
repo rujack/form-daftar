@@ -27,7 +27,7 @@ export const postToAPIForm = (form) => (dispatch) => {
     });
 
     axios
-      .post("http://192.168.43.238:4000/form/post", data, {
+      .post("https://apidaftar.herokuapp.com/form/post", data, {
         headers: {
           "content-type": "application/json",
         },

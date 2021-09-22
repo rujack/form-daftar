@@ -52,7 +52,7 @@ const Admin = () => {
   };
   const onDelete = () => {
     axios
-      .delete(`http://192.168.43.238:4000/form/post/${id}`)
+      .delete(`https://apidaftar.herokuapp.com/form/post/${id}`)
       .then((res) => {
         console.log(res);
         dispatch({ type: "SET_MODAL_REQ", payload: false });

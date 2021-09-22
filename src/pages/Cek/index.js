@@ -17,7 +17,7 @@ const Cek = (props) => {
 
   const onCekId = () => {
     axios
-      .get(`http://192.168.43.238:4000/form/post/${cekId}`)
+      .get(`https://apidaftar.herokuapp.com/form/post/${cekId}`)
       .then((res) => {
         const hasil = res.data.data;
         setHasilCek(hasil);

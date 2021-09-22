@@ -10,7 +10,7 @@ export const setMoalReq = (payload) => {
 
 export const setDataRequest = () => (dispatch) => {
   axios
-    .get(`http://192.168.43.238:4000/form/posts/request`)
+    .get(`https://apidaftar.herokuapp.com/form/posts/request`)
     .then((result) => {
       const responseApi = result.data;
       dispatch({
@@ -31,7 +31,7 @@ export const updateToAPIForm = (form, id) => (dispatch) => {
       pesan: form.pesan,
     });
     axios
-      .put(`http://192.168.43.238:4000/form/post/${id}`, data, {
+      .put(`https://apidaftar.herokuapp.com/form/post/${id}`, data, {
         headers: {
           "content-type": "application/json",
         },
